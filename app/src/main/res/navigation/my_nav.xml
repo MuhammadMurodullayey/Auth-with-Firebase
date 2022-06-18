@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="uz.gita.onlineshop.presentation.ui.screens.LoginScreen"
+        android:label="screen_login"
+        tools:layout="@layout/screen_login" >
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="uz.gita.onlineshop.presentation.ui.screens.RegisterScreen"
+        android:label="screen_register"
+        tools:layout="@layout/screen_register" >
+        <action
+            android:id="@+id/action_registerScreen_to_verifyScreen2"
+            app:destination="@id/verifyScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.onlineshop.presentation.ui.screens.HomeScreen"
+        android:label="screen_home"
+        tools:layout="@layout/screen_home" />
+    <fragment
+        android:id="@+id/verifyScreen2"
+        android:name="uz.gita.onlineshop.presentation.ui.screens.VerifyScreen"
+        android:label="screen_verify"
+        tools:layout="@layout/screen_verify" >
+        <action
+            android:id="@+id/action_verifyScreen2_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+</navigation>

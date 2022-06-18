@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="we_ve_sent_you_verification_code_with_sms_check_your_sms_for_verification_code">We\'ve sent you verification code with SMS. Check your SMS for verification code</string>
+    <string name="email_or_phone_number">Email or phone number</string>
+    <string name="this_user_has_not_yet_registered">This user has not yet registered</string>
+    <string name="wrong_password">Wrong password</string>
+</resources>
